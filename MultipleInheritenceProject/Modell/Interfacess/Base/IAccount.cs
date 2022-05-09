@@ -20,7 +20,7 @@ namespace Kreta.Models.Interfaces.Base
 
         public bool IsSuccessfulLogin(string givenLoginName,string givenPassword)
         {
-
+            return this.IsLoginNameCorrect(givenLoginName) && this.IsPasswordCorrect(givenPassword);
         }
 
     }

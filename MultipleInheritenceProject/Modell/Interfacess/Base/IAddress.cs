@@ -15,7 +15,7 @@ namespace Kreta.Models.Interfaces.Base
 
         public string WritingAddresses
         {
-
+            get => $"{this.City}\n{this.StreetAndNumber}\n{this.PostCode}";
         }
     }
 }

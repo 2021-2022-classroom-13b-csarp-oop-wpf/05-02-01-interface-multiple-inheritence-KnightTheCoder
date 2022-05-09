@@ -14,6 +14,7 @@ namespace Kreta.Models.Interfaces.Base
 
         public bool HasChild
         {
+            get => this.NumberOfChildren > 0;
         }
     }
 }
