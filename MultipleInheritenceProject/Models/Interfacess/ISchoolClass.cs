@@ -9,15 +9,15 @@ namespace Kreta.Models.Interfaces
     interface ISchoolClass
     {
         public int Id { get ; set ; }
-        public int Grade { get; set; }
-        public char GradeType { get ; set ; }
+        public int CLass { get; set; }
+        public char CLassType { get ; set ; }
         public int TeacherId { get; set ; }
 
-        public string GradeGradeType
+        public string ClassClassType
         {
             get
             {
-                string result = Grade + ". " + GradeType;
+                string result = CLass + ". " + CLassType;
                 return result;
             }
         }
@@ -26,7 +26,7 @@ namespace Kreta.Models.Interfaces
         {
             get
             {
-                if (Grade == 12)
+                if (CLass == 12)
                 {
                     return true;
                 }
