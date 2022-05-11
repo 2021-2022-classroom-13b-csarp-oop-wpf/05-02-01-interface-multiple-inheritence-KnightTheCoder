@@ -9,36 +9,36 @@ namespace MultipleInheritenceProject.Models
 {
     class Student : IStudent
     {
-        public int StudentId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool Woman { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime DataOfBirth { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string City { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string StreetAndNumber { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int PostCode { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LoginName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Password { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int StudentId { get; set; }
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public bool Woman { get; set; }
+        public DateTime DataOfBirth { get; set; }
+        public string City { get; set; }
+        public string StreetAndNumber { get; set; }
+        public int PostCode { get; set; }
+        public string LoginName { get; set; }
+        public string Password { get; set; }
 
         public bool IsLoginNameCorrect(string givenLoginName)
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool IsPasswordCorrect(string givenPassword)
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool VerifyLoginName(string givenLoginName)
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool VerifyPassword(string givenPassword)
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }
